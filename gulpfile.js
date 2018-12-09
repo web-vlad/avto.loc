@@ -40,7 +40,7 @@ gulp.task("html", function() {
 // Combine, compile Sass in CSS, install Vend. prefixes and further minimization of the code
 gulp.task("sass", function() {
     return gulp.src("app/sass/*.scss")
-        .pipe(concat('style.scss'))
+        //.pipe(concat('style.scss'))
         .pipe(sass())
         /*.pipe(autoprefixer({
             browsers: ['last 2 versions'],

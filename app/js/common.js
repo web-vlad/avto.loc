@@ -34,6 +34,22 @@ $(document).ready(function() {
 
     });
 
+    // GALLERY DIPLOMA
+    /*$('.diploma-gallery a').magnificPopup({
+        type: 'image',
+        gallery:{
+            enabled:true
+        }
+    });*/
+
+    // GALLERY CONTENT
+    $('.content-gallery a').magnificPopup({
+        type: 'image',
+        gallery:{
+            enabled:true
+        }
+    });
+
     // SLIDER PROGRAM
     /*$('.slider-program').slick({
         slidesToShow: 1,
