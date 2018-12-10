@@ -2,24 +2,21 @@
 $(document).ready(function() {
 
 // SHOW MAIN MENU
-	/*$('.button-menu').click(function(e) {
-			$(this).toggleClass('active');
-			$('.box-main-menu').toggleClass('open');
-			e.stopPropagation();
-			e.preventDefault();
-		});
-		
-	
-		$('.close-menu').click(function() {
-			$('.button-menu').removeClass('active');
-			$('.box-main-menu').removeClass('open');
-		});*/
-	
-		/*$('body').click(function(e){
-			//e.stopPropagation();
-			$('.button-menu').removeClass('active');
-			$('.box-main-menu').removeClass('open');
-		});*/
+	$('.button-menu').click(function(e) {
+        $(this).toggleClass('active');
+        $('.box-main-menu').toggleClass('open');
+        e.stopPropagation();
+        e.preventDefault();
+    });
+    $('.close-menu').click(function() {
+        $('.button-menu').removeClass('active');
+        $('.box-main-menu').removeClass('open');
+    });
+    $('body').click(function(e){
+        e.stopPropagation();
+        $('.button-menu').removeClass('active');
+        $('.box-main-menu').removeClass('open');
+    });
 		
 		//SHOW SPECIFICITY
     $('.hide-block').hide();
@@ -35,12 +32,12 @@ $(document).ready(function() {
     });
 
     // GALLERY DIPLOMA
-    /*$('.diploma-gallery a').magnificPopup({
+    $('.diploma-gallery a').magnificPopup({
         type: 'image',
         gallery:{
             enabled:true
         }
-    });*/
+    });
 
     // GALLERY CONTENT
     $('.content-gallery a').magnificPopup({
